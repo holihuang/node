@@ -3,7 +3,7 @@ const session = require('koa-session-minimal')
 const MysqlStore = require('koa-mysql-session')
 const cors = require('koa2-cors')
 
-const config = require('../config')
+const config = require('../server.config')
 const routers = require('./routers/index')
 
 const app = new Koa()

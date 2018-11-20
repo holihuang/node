@@ -4,12 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start_server": "pm2 start ./server/app.js --watch",
-    "del_server": "pm2 delete ./server/app.js",
-    "start": "webpack-dev-server --mode development --open"
+    "start_server": "pm2 start ./ecosystem.config.js --watch",
+    "delete_server": "pm2 delete ./ecosystem.config.js",
+    "start_static": "webpack-dev-server --mode development --open",
+    "start": "npm run start_server & npm run start_static"
   },
   "dependencies": {
-    "@sunl-fe/dataservice": "^2.5.1",
     "antd": "^3.10.4",
     "koa": "next",
     "koa-mysql-session": "^0.0.2",

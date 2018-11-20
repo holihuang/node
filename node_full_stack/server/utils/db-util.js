@@ -1,4 +1,4 @@
-const cfg = require('../../config.js')
+const cfg = require('../../server.config.js')
 const mysql = require('mysql')
 
 const db = cfg.database

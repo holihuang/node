@@ -9,16 +9,17 @@ module.exports = {
         ],
         // 从监控目录中排除
         ignore_watch: [
-
+        	'logs'
         ],
         // 错误日志路径
-        error_file: './logs/app-err.log',
+        error: './logs/error.log',
         // 普通日志路径
-        out_file: './logs/app-out.log',
+        output: './logs/output.log',
+        merge_logs: true,
         // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
         args: 'one two',
         instances: 1,
-        autorestart: true,
+        autorestart: false,
         watch: false,
         max_memory_restart: '1G',
         env: {

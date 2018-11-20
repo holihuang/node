@@ -15,7 +15,7 @@ module.exports = {
     async addInfo(opt = {}) {
         const _sql = `insert into info(code, name, age, date)
                         values(?, ?, ?, ?)`
-        let result = await dbUtils.add(_sql, ['000111', '金庸', '28', '2018-11-11'])
+        let result = await dbUtils.add(_sql, ['000111', '杨过', '38', '2018-11-11'])
         return result
     }
 }
